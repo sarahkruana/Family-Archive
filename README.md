@@ -1,2 +1,2 @@
 # Family-Archive
-This is a digital archive of some of my families archival documents.
+Designed and built a digital archive system that uses user input to retrieve and populate the website with the certain type of archival pieces that fit the given requirements. Connected a website to a series of SQL databases that stored the archived pieces under their classification and associated name. The website links multiplied different pages that explained the purpose, the data, and the creator. Generated specific pieces that displayed photos, names, and descriptions based on the users designated classification and person associated. Also resolved common errors such as missing pieces.
