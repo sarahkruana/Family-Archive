@@ -1,0 +1,116 @@
+<!--
+    This is the actual meat behind the discovery page of my project.
+    This is what connects to the js and css file, as well as provide the
+    photos and the drop down menu of the page.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Archive Website </title>
+    <link href="discovery.css" rel="stylesheet" type="text/css" />
+    <script src="discovery.js" rel="text/javascript" defer> </script>
+</head>
+
+
+<body>
+    <h1><center> Discover </center></h1>
+
+    <center>
+        <img src="FamilyTree.png" height = 400px width = 750px> 
+    </center>
+
+    <br><br>
+
+    <center>
+        <p id="instruction">
+            To start, select a person from my family tree from the drop down
+            menu. Then, select the type of artifact that you wish to find from
+            the second drop down menu. Finally, hit submit and watch the 
+            artifacts related to both that person and type populate down below!
+        </p>
+    </center>
+
+    <br><br>
+
+    <!--
+        This section is the code for the two dropdown menus and the Submit
+        button. The first one is categorized by family, then alphabetasized.
+        The second one just lists the different types of submission types. 
+    -->
+    <center>
+        <label for="people"> Choose a person: </label>
+        <select name="people" id="people">
+            <optgroup label="Beldens">
+                <option value="ashleyB">Ashley Belden</option>
+                <option value="ericB">Eric Belden</option>
+                <option value="kathyB">Kathy Belden</option>
+            </optgroup>
+            
+            <optgroup label="Bromfelds">
+                <option value="daliceB">Dalice Bromfeld</option>
+                <option value="fredB">Fred Bromfeld</option>
+            </optgroup>
+
+            <optgroup label="Hashagans">
+                <option value="carlH">Carl August Hashagen</option>
+                <option value="doratheaH">Dorathea Hashagen</option>
+                <option value="johnH">John Bernhard Hashagen</option>
+                <option value="nancyH">Nancy Hashagen</option>
+                <option value="roseH">Rose Hashagan</option>
+                <option value="rudolphH_JR">Rudolph Hashagen Jr</option>
+                <option value="rudolphH_SR">Carl Rudolph Hashagen Sr</option>
+            </optgroup>
+            
+           <optgroup label="Ruanas">
+                <option value="christineR">Christine Ruana</option>
+                <option value="drewR">Drew Ruana</option>
+                <option value="jonathanR">Jonathan Ruana</option>
+                <option value="rudyR">Rudy Ruana</option>
+                <option value="sarahR">Sarah Ruana</option>
+           </optgroup>
+            
+           <optgroup label="Others">
+                <option value="misc">Other</option>
+           </optgroup>
+        </select>
+
+        &emsp;
+
+        <label for="submissionType"> Choose a type of submission: </label>
+        <select name="submissionType" id="subType">
+            <option value="photo">Photos</option>
+            <option value="doc">Documents</option>
+            <option value="object">Objects</option>
+        </select>
+
+        &emsp;
+
+        <button onclick="submit()" id="submit">Submit</button>
+    </center>
+
+    <br><br>
+
+
+    <center> 
+        <button onclick="mainMenuButton()" id="mainMenu"> Main Menu </button>
+        &emsp;
+        <button id="discover"> Discover </button> 
+        &emsp;
+        <button onclick="aboutMeButton()"> About Me </button>
+    </center>
+
+    <br><br><br><br>
+
+    <!--
+        The two lines underneath is what gets populated everytime that someone
+        clicks the submit button. Either artifacts will pop up, or the user
+        will get a 'sorry message'
+    -->
+    <p id = "sorryMessage"> </p>
+    <table id = "display_table">  </table>
+
+    <br><br><br><br><br><br>
+
+</body>

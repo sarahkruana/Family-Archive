@@ -1,0 +1,29 @@
+/*
+This is the css page for the main menu part of the website. 
+All this file does is change the look of the main menu so that it's not
+just a bland, white screen
+*/
+
+body {
+    background-color: #d0c1a9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+    color: #34351d;
+    
+}
+
+#intro {
+    font-size: 25px;
+    color: #34351d;
+    
+}
+
+button {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #d0c1a9;
+    background-color: #34351d;
+}

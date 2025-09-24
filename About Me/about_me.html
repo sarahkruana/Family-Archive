@@ -1,0 +1,75 @@
+<!--
+    This is the meat behind the about me page. It lists all required
+    information about me. Including the title, a photo, a heading, and a tech
+    stack. It still is able to transfer to the other pages.  
+--> 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Archive Website </title>
+    <link href="about_me.css" rel="stylesheet" type="text/css" />
+    <script src="about_me.js" rel="text/javascript"> </script>
+</head>
+
+
+<body>
+    <h1><center> About Me </center></h1>
+    <center>
+        <table id = "table"> 
+            <tr>
+                <th> <img src="portrait.png" height = 524px width = 400px>  </th>
+                    <th>Sarah Ruana <br>
+                        Advanced Programming Topics <br>
+                        Period 1 <br>
+                        June 9th, 2024 <br> 
+                    </th>
+                </tr>
+        </table>
+    </center>
+
+
+    <br><br>
+
+    <p> The Ruana Archive </p>
+
+    <p> This web page is designed to showcase my family's extensive archival
+        pieces so that my family heirlooms don't get lost to time. The user 
+        will be able to choose both a person and a type of artifact from 
+        various drop down menus. This will then populate items that match that
+        query below the drop down menus. If a user chooses a query that is not
+        available, a message will appear in the same place. For each artifact
+        there is a short description and date attached that can be seen by the 
+        reader. This project is unique because it is essentially a digital 
+        archive similar to a museum, however, it is interactive drawing people
+        together with stories of the past. 
+    </p>
+
+    <p> Tech Stack: <br>
+        Chrome - this is the interpreter and is where the website is shown <br>
+        VSCode - this is the IDE for my project <br>
+        Google Drives - Version control for old copies of my coding files <br>
+        MySQL - database to store the artifacts and people in their connected 
+        tables <br>
+        SpringBoot - the server whose architecture provided a framework for 
+        my api
+
+    </p>
+
+    <br><br><br>
+    <center> 
+        <button onclick="mainMenuButton()" id="mainMenu" > Main Menu</button>
+        &emsp;
+        <button onclick="discoverButton();" id="discover" > Discover</button> 
+        &emsp;
+        <button id="discover"> About Me </button>
+    </center>
+    
+
+</body>
+
+
+</html>

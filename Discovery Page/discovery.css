@@ -1,0 +1,54 @@
+/*
+This is the css page for the discovery part of the website. 
+All this file does is change the look of the discovery page so that it's not
+just a bland, white screen
+*/
+
+body {
+    background-color: #d0c1a9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+    color: #34351d;
+    
+}
+
+#instruction {
+    font-size: 19px;
+    color: #34351d;
+    
+}
+
+#sorryMessage {
+    font-size: 25px;
+    color: #34351d;
+    text-align: center;
+}
+
+button {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #d0c1a9;
+    background-color: #34351d;
+}
+
+label {
+    font-size: 25px;
+    color: #34351d;
+}
+
+#people {
+    font-size: 17px;
+    color: #34351d;
+}
+
+#subType {
+    font-size: 17px;
+    color: #34351d;
+}
+
+#submit {
+    font-size: 20px;
+}
